@@ -1,0 +1,36 @@
+@use'base/variables' as v;
+@use'base/mixins' as m;
+
+.header{
+    padding: v.$sep 0;
+    position: relative;
+    min-height: 60rem;
+
+    &::before{
+        content: '';
+        background-color: v.$black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: .6;
+    }
+    .navegation{
+        position: relative;
+        
+        .text-header{
+            color: v.$white;
+            margin-top: v.$sep;
+            text-align: center;
+            text-transform: uppercase;
+            @include m.tablet{ 
+                margin-top: 10rem;
+            }
+        }
+
+    }
+}
+.header-main{
+    background-image: url(../img/header_inicio.jpg);
+}

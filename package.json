@@ -18,7 +18,10 @@
   "homepage": "https://github.com/luischavez23/Cafe#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-avif": "^1.0.1",
+    "gulp-imagemin": "^7.0.0",
     "gulp-sass": "^5.0.0",
+    "gulp-webp": "^4.0.1",
     "sass": "^1.43.3"
   }
 }

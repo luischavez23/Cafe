@@ -1,0 +1,18 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contain-main{
+    background-color: v.$white;
+    padding: 5rem 2rem;
+
+    @include m.tablet{ 
+        padding: 10rem;
+        margin-top: -10rem;
+        position: relative;
+    }
+
+    p{
+        font-size: 1.6rem;
+        line-height: 2;
+    }
+}
