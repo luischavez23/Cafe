@@ -1,7 +1,7 @@
 @use 'variables' as v;
 
 h1,h2,h3{
-    font-family: v.$fontMain;
+    font-family: v.$mainFont;
     margin: 0 0 v.$sep 0;
     text-transform: uppercase;
     text-align: center;
