@@ -337,7 +337,7 @@ template {
   display: none;
 }
 
-h1, h2, h3 {
+h1, h2, .heading-white, h3 {
   font-family: "Raleway", sans-serif;
   margin: 0 0 5rem 0;
   text-transform: uppercase;
@@ -349,16 +349,16 @@ h1 {
   font-size: 4rem;
 }
 
-h2 {
+h2, .heading-white {
   font-size: 3.6rem;
   color: #5E311E;
 }
-h2 span {
+h2 span, .heading-white span {
   display: block;
   font-size: 1.8rem;
   color: #C39C63;
 }
-h2::after {
+h2::after, .heading-white::after {
   content: "";
   display: block;
   height: 10rem;
@@ -366,6 +366,16 @@ h2::after {
   margin: 0 auto;
   background-image: url(../img/cafe.svg);
   background-size: 10rem;
+}
+
+.heading-white {
+  color: #FFF;
+}
+.heading-white span {
+  color: #FFF;
+}
+.heading-white::after {
+  display: none;
 }
 
 h3 {
@@ -624,4 +634,54 @@ ul {
   .image:nth-child(10) img {
     width: 62rem;
   }
+}
+
+.our-menu {
+  background-image: url(../img/menu_arriba.svg), url(../img/menu_abajo.svg), linear-gradient(to top, #5E311E, #5E311E);
+  background-repeat: no-repeat;
+  background-position: center 5rem, center 94%, 100%;
+  padding: 15rem 2rem 20rem 2rem;
+  background-size: 200%;
+}
+@media (min-width: 768px) {
+  .our-menu {
+    padding: 15rem 0 20rem 0;
+    background-size: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .our-menu {
+    background-size: 50%, 50%, 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+.menu h3 {
+  color: #FFF;
+}
+.menu li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li p {
+  color: #FFF;
+  font-size: 2.2rem;
+  line-height: 1.5;
+  margin: 0 0 2rem 0;
+}
+.menu li p span {
+  display: block;
+  color: #C39C63;
+}
+.menu li .precio {
+  font-size: 4rem;
+  font-weight: 700;
 }
