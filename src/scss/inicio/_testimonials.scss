@@ -1,0 +1,20 @@
+@use'base/variables' as v;
+@use'base/mixins' as m;
+
+.testimonials{
+  padding: 6rem 2rem;
+}
+.testimonial-text{
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 2rem 4em ;
+    border-radius: 1rem;
+    background-color: v.$third_color;
+    .author{
+        color: v.$first_color;
+        text-align: end;
+        font-weight: 700;
+        font-family: v.$thirdFont;
+        font-size: 2.2rem;
+    }
+}

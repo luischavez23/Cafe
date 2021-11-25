@@ -434,6 +434,14 @@ ul {
   background-color: #5E311E;
 }
 
+.negative-margin {
+  margin-top: -6rem;
+}
+
+.bg-white {
+  background-color: #FFF;
+}
+
 .header {
   padding: 5rem 0;
   position: relative;
@@ -684,4 +692,23 @@ ul {
 .menu li .precio {
   font-size: 4rem;
   font-weight: 700;
+}
+
+.testimonials {
+  padding: 6rem 2rem;
+}
+
+.testimonial-text {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 2rem 4em;
+  border-radius: 1rem;
+  background-color: #ebe7de;
+}
+.testimonial-text .author {
+  color: #5E311E;
+  text-align: end;
+  font-weight: 700;
+  font-family: "Bona Nova", serif;
+  font-size: 2.2rem;
 }
