@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="icon" href="build/img/cafe.svg">
+    <title>Café</title>
+</head>
+<body>
+    <header class="header header-aboutUs">
+        <div class="container navegation">
+            <div class="bar-nav">
+                <div class="logo">
+                    <img src="build/img/logo.svg" alt="logo cafetería">
+                </div>
+                <nav class="nav">
+                    <a href="index.html">Inicio</a>
+                    <a class="active" href="aboutUs.html">Nosotros</a>
+                    <a href="process.html">Proceso</a>
+                    <a href="menu.html">Menú</a>
+                    <a href="galeria.html">Galería</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+            <div class="text-header">
+                <h1>Una nueva experiencia cada día</h1>
+            </div>
+        </div>
+    </header>
+    <main class="container contain-main">
+       <h2><span>Conoce más</span> sobre nosotros</h2>
+       <div class="aboutUs-contain">
+           <div class="aboutUs-img">
+               <picture>
+                   <source
+                        srcset="build/img/nosotros_sidebar.avif"
+                        type="image/avif">
+                    <source
+                        srcset="build/img/nosotros_sidebar.webp"    
+                        type="image/webp">
+                    <source
+                        srcset="build/img/nosotros_sidebar.jpeg"
+                        type="image/jpeg">
+                    <img loading="lazy" decoding="async" src="build/img/nosotros_sidebar.jpg" lazyalt="imagen" width="500" height="300">
+               </picture>
+           </div>
+           <div class="aboutUs-text">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repellat est corporis rem ratione, facilis blanditiis vitae, fuga soluta, vel consectetur. In, tempora? Qui blanditiis architecto in esse quas reprehenderit</p>
+               <blockquote>Excelente Sabor!</blockquote>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut reprehenderit inventore laboriosam eum quibusdam sunt officiis aspernatur corrupti totam, vel facilis blanditiis harum ipsa non esse nobis iusto nihil culpa.</p>
+           </div>
+       </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-contain bg-white">
+            <div class="footer-box ubicacion">
+                <h3>Ubicación</h3>
+                <p>Jacarandas Avenue 4686</p>
+                <p>Guadalajara, Jalisco</p>
+            </div>
+            <div class="footer-box reservacion">
+                <h3>Teléfono</h3>
+                <p>3338282208</p>
+                <a href="tel:+523338282208">Llamar</a>
+            </div>
+            <div class="footer-box horario">
+                <h3>Horario</h3>
+                <p>Lunes - Viernes 9:00 - 18:00</p>
+                <p>Sabado 9:00 - 14:00</p>
+                <p>Domingo Cerrado</p>
+            </div>
+        </div>
+        <p class="text-center footer-copy negative-mg-brown">Todos los derechos reservados &copy;2021</p>
+    </footer>
+</body>
+</html>
